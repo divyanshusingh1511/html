@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Divyanshu Singh — Resume</title>
+  <style>
+    :root{
+      --bg:#0b0f1a; --card:#121826; --ink:#e6e9ef; --muted:#b9c0d0; --accent:#66e0a3; --chip:#1b2234;
+      --link:#8bb6ff; --rule:#20283a;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:400 15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .page{max-width:980px;margin:40px auto;padding:28px;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.0)) , var(--card);box-shadow:0 10px 40px rgba(0,0,0,.25)}
+    header{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}
+    h1{margin:0;font-size:34px;letter-spacing:.3px}
+    .role{margin-top:6px;color:var(--muted)}
+    .contact{display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end}
+    .chip{background:var(--chip);padding:8px 12px;border-radius:999px;border:1px solid var(--rule)}
+    .toolbar{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{border:1px solid var(--rule);background:transparent;color:var(--ink);padding:8px 12px;border-radius:10px;cursor:pointer}
+    .btn:hover{border-color:var(--accent);box-shadow:0 0 0 2px rgba(102,224,163,.15)}
+    .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;margin-top:22px}
+    section{padding:16px 0;border-top:1px solid var(--rule)}
+    h2{margin:0 0 10px 0;font-size:16px;letter-spacing:.6px;color:var(--accent);text-transform:uppercase}
+    h3{margin:0;font-size:16px}
+    .meta{color:var(--muted);font-size:13px}
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0}
+    .kvs{display:flex;flex-wrap:wrap;gap:8px}
+    .kvs .chip{font-size:13px}
+    .two-col{columns:2;gap:10px}
+    .mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
+    footer{border-top:1px solid var(--rule);margin-top:14px;padding-top:12px;color:var(--muted);font-size:13px}
+
+    @media (max-width:860px){
+      .grid{grid-template-columns:1fr}
+      header{grid-template-columns:1fr}
+      .contact{justify-content:flex-start}
+    }
+
+    /* Print styles */
+    @media print{
+      body{background:#fff}
+      .page{box-shadow:none;background:#fff}
+      a{color:#000;text-decoration:none}
+      .btn,.toolbar{display:none}
+      .chip{border-color:#ddd;background:#f7f7f7}
+    }
+  </style>
+</head>
+<body>
+  <div class="page" role="document">
+    <header>
+      <div>
+        <h1>Divyanshu Singh</h1>
+        <div class="role">Computer Engineering · Web Dev · Cloud · Generative AI · Internship Seeker</div>
+        <div class="toolbar">
+          <button class="btn" onclick="window.print()">Print / Save as PDF</button>
+          <button class="btn" onclick="shareResume()">Share</button>
+        </div>
+      </div>
+      <div class="contact">
+        <span class="chip">📍 India (IST)</span>
+        <a class="chip" href="mailto:divyanshusingh23993@gmail.com">📧 divyanshusingh23993@gmail.com</a>
+        <a class="chip" href="tel:+918979953176">📞 +91 89799 53176</a>
+        <a class="chip" href="https://github.com/divyanshusingh1511" target="_blank" rel="noreferrer">🐙 github.com/divyanshusingh1511</a>
+        <a class="chip" href="https://www.linkedin.com/in/divyanshu1511/" target="_blank" rel="noreferrer">🔗 linkedin.com/in/divyanshu1511</a>
+      </div>
+    </header>
+
+    <section aria-labelledby="summary">
+      <h2 id="summary">Summary</h2>
+      <p>
+        BTech student with hands-on experience in Quantum Computing (DRDO internship), full‑stack web development, and cloud (AWS & GCP).
+        Comfortable shipping end‑to‑end features, from clean UIs to scalable backends. Passionate about building for impact—
+        especially projects around sustainability (trees & water conservation) through Boond Foundation.
+      </p>
+      <div class="kvs">
+        <span class="chip">C++ · Python · JavaScript</span>
+        <span class="chip">React · Node.js · Express</span>
+        <span class="chip">AWS (Lambda, S3, API GW)</span>
+        <span class="chip">GCP (App Engine, Billing)</span>
+        <span class="chip">SQL · MongoDB</span>
+        <span class="chip">Git · CI/CD</span>
+        <span class="chip">Quantum Computing basics</span>
+      </div>
+    </section>
+
+    <div class="grid">
+      <main>
+        <section aria-labelledby="experience">
+          <h2 id="experience">Experience</h2>
+
+          <article>
+            <h3>Research Intern — DRDO (Quantum Computing)</h3>
+            <div class="meta">2025 • Remote/On‑site</div>
+            <ul>
+              <li>Studied and implemented <span class="mono">Simon's algorithm</span> and 2‑qubit circuits; built small demos to illustrate speed‑ups.</li>
+              <li>Explored foundations of quantum gates, measurement, and basic error intuition.</li>
+              <li>Collaborated on documentation and reproducible code notebooks for student onboarding.</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>Volunteer — Boond Foundation</h3>
+            <div class="meta">2024 – Present • Trees & Water Conservation</div>
+            <ul>
+              <li>Organized plantation drives at A S Inter College, Mawana; coordinated plant collection and city‑wide distribution.</li>
+              <li>Supported awareness campaigns around saving trees and responsible water use.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section aria-labelledby="projects">
+          <h2 id="projects">Selected Projects</h2>
+
+          <article>
+            <h3>Smart City PaaS App (TechVille)</h3>
+            <div class="meta">PaaS‑first architecture · Real‑time buses, alerts, utilities</div>
+            <ul>
+              <li>Prototyped a city app delivering live bus ETAs, emergency alerts, and utility dashboards.</li>
+              <li>Compared IaaS vs PaaS vs SaaS; chose PaaS for faster iteration an
